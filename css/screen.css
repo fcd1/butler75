@@ -1,0 +1,389 @@
+/* == Generic == */
+body {font: 11px Arial, Helvetica, sans-serif; color:#000; background:#eee;}
+
+h1.exhHeader {
+	font-size:48px;
+	height:125px;
+	vertical-align:middle;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-family: "Times New Roman", Times, Serif;
+	text-decoration:none;
+	font-weight:normal;
+	padding:30px 0 0 25px;
+}
+h1.exhHeader A, h1.exhHeader A:visited {
+	color:#fff;
+	text-decoration:none;
+}
+#content h1 {font-family: Arial, Helvetica, Sans-serif; font-size:0em;line-height:1em;margin:.5em;color:#a4924a;height:30px;width:100%;background-color:#a4924a}
+#content h1 A, #content h1 A:visited { color: #444; }
+h2 {font-size:1.6em; line-height:1.125em;padding: 18px 18px 9px 0;margin: 5px;border-bottom:1px dotted #444;}
+h3 {font-size:1.4em; color:#444; font-weight:bold; padding:5px 0 5px 0;} /*margin-bottom:1.2857em; line-height:1.2857em;clear: both;font-weight: bold;color: #444444;}*/
+h5 {background-color: #222;padding: 0 0 1em;}
+
+a img {border:none;}
+p,ul,ol,dl,#result, .element-text {
+	/* fcd1, 9/6/13: changed this to inherit */
+	font-size:inherit;
+	margin-bottom:1.5em;
+	line-height:1.8em;
+}
+#commentbox, #result { font-size:12px; border:1px solid #a4924a; background:#f0e8cb; padding:10px 10px 10px 25px;}
+#result { display:none; }
+#commentbox H3 { color:#222; }
+strong {font-weight:bold;}
+em {font-style:italic;}
+a:link,a:visited {color: #003366;}
+a:hover {color:#336699;}
+	h1 a {text-decoration: none;}
+	h5 a, h5 a:visited {color: #ccc;}
+
+/* ===== Structure ===== */
+#wrap {width:800px; margin:0px auto; padding:0;background:#036;overflow:hidden; border:1px solid #ddd;}
+
+#header {background:#fff; color:#333; padding:0; margin: 0;overflow: hidden;
+/*border-bottom: 9px solid #333;*/}
+
+/* =Exhibit Navigation= */	
+
+.exhibit-section-nav li a, .exhibit-section-nav li a:visited {
+	display:block;
+	float:left;
+	text-decoration:none;
+	padding:0.5em 0;
+	text-align: left;
+}
+	.exhibit-section-nav li a:hover {text-decoration: underline;}
+	
+/* =Page Navigation= */
+	.exhibit-section-nav li {display:block; float:left; width:auto;padding: .5em 1.5em .5em 0;margin-right:1px;}
+.exhibit-page-nav {
+	list-style:none; 
+	float: left; 
+	padding: 0.25em 0 0 2em;
+	width:100%;
+/*	background-color: #a4924a; */
+	margin-bottom: 0;
+}
+	.exhibit-page-nav li {display:inline;float: left; margin-right:2px;}
+.exhibit-page-nav li a {
+	width:100%;
+	display:block; 
+	text-decoration:none;
+	padding:0.25em 1em;
+	text-align: left;
+/*	background-color: #666; */
+	color: #fff;
+}
+	/* tab area */
+	.exhibit-page-nav li.current a,.exhibit-page-nav li a:hover {background-color: #fff;color:#063769;}
+
+
+/* == Content == */
+
+#content {background-color:#036;color:#000;padding:0;margin:0;}
+#info {
+	float:right;
+	width:572px;
+	background-color:#fff;
+	padding:8px;margin:0px;
+	padding-bottom:16px;
+}	
+
+#exhibit-sections {
+	float:left;
+	background:#036;
+	width:212px;
+	font-size: 1em; line-height: 1.8em;
+	color:#fff;
+	text-align:center;
+	padding:0;margin:0;
+	padding-top:12px;
+	font-weight:bold;
+}
+#exhibits-section UL, #exhibit-sections LI {
+	text-align:center;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	font-weight:bold;
+	list-style-type:none;
+}		
+#exhibit-sections a, #exhibit-sections a:visited {
+	display: block;
+	text-decoration: none;
+	overflow:hidden;
+	color:#fff;
+	width:100%;
+	padding-left:1em;
+/*	text-transform:uppercase; */
+	font-weight:bold;
+/*	margin-bottom:22px; */
+}
+
+#exhibit-sections LI.current {
+        text-align:center;
+        padding:0px;
+        margin:0px;
+        width:100%;
+	background:#9cf;
+	font-weight:bold;
+}
+
+#exhibit-sections LI.current a, #exhibit-sections LI.current a:visited {
+	display: block;
+	text-decoration: none;
+	overflow:hidden;
+	color:#366;
+	background:#9cf;
+/*	text-transform:uppercase; */
+	font-weight:bold;
+}
+
+#exhibit-sections LI.current a:hover, #exhibit-sections LI.current a:visited:hover {
+	display: block;
+	text-decoration: none;
+	overflow:hidden;
+	color:#fff;
+	background:#9cf;
+/*	text-transform:uppercase; */
+	font-weight:bold;
+}
+		
+#exhibit-sections a:hover {background-color: #99ccff;color:#336699}
+		
+/*#exhibit-sections .section-title {padding: 0 1% 1.5em 1%; width: 20%; float: left;font-size: 1.4em;}
+			
+#exhibit-sections a:hover .section-title {color: #dd3300;}
+		
+#exhibit-sections .section-desc {padding: 0 0 1.5em 1%; width: 77%; float: right; color: #333;}
+*/
+#exhibit-credits {/*padding: 1em 0;*/}
+
+.commentary {background:#eee; padding:18px;}
+	.commentary p {font-size:1.1em; line-height:1.63636em;}
+	
+/* == Layout == */
+.gallery-full-left,
+.gallery-full-right,
+.gallery-thumbnails,
+.gallery-thumbnails-text-bottom,
+.gallery-thumbnails-text-top,
+.image-list-left,
+.image-list-left-thumbs,
+.image-list-right,
+.image-list-right-thumbs,
+.text-full,
+.text-image-left,
+.text-image-right
+	{clear: both;}
+
+.exhibit-item {
+	background: #eee;
+	width:200px;
+	height:250px; 
+	overflow:hidden;
+	border:1px solid #fff;
+	text-align:center;
+	vertical-align:top; 
+}
+
+.item img, .exhibit-item img {margin-bottom: 1.5em;}
+
+#exhibit-content {
+	width:150px;
+}
+
+#exhibit-sections-footer {
+        float:left;
+        background:#556559;
+        width:196px;
+        font-size: 1.2em; line-height: 1.8em;
+        color:#fff;
+        text-align:center;
+        padding:8px;margin:0;
+	min-height:150px;
+	clear:both;
+}
+
+#info-footer {
+        float:right;
+        width:572px;
+        background-color:#d1c8a4;
+        padding:8px;margin:0px;
+	min-height:150px;
+	color:#063769;
+}
+
+.rss-box {
+	padding:5px;
+}
+.rss-box UL, .rss-box LI {
+	list-style-type:none;
+}
+.rss-box P.rss-title {
+	display:none;
+}
+A.rss-item, A.rss-item:visited, A.rss-item:hover, A.rss-item:visited:hover {
+	font-weight: bold;
+	text-decoration: none;
+	cursor: text;
+	color:#444;
+}
+DIV.element-text-empty {
+	display:none;
+}
+
+DIV.timeline-event-bubble-title {
+	color:#000;
+}
+DIV.timeline-event-bubble-body {
+	color:#000;
+}
+DIV.timeline-event-bubble-time {
+	color:#ddd;
+	display:none;
+}
+#headNav {
+        background-color:#2d2a62;
+        color:#fff;
+        border-bottom:1px solid #2d2a62;
+}
+A.topNavbarLink:link, A.topNavbarLink:hover, A.topNavbarLink:visited, A.topNavbarLink:visited:hover   {
+        color:#fff;
+        text-decoration:none;
+        font-size:11px;
+}
+#footer {clear: both;padding:0;margin:0;margin-top:5px;color:#fff;background-color:#2d2a62;font-size:11px;min-height:18px;vertical-align:middle; border-top:1px solid #eee;}
+        #footer a {color: #fff;text-decoration:none;}
+        #footer a:visited {color: #fff;text-decoration:none;}
+
+.footer11px A, .footer11px A:visited { color:#999; }
+
+.headBack {
+	background:#000;
+	height:140px;
+	overflow:hidden;
+}
+ /* fcd1, 9/5/13: added following to hide the timeline stuff from the item.php page */
+.exhibit-item-show #exhibit-sections-footer,
+.exhibit-item-show #info-footer {
+	display: none;
+}
+
+/* fcd1, 9/6/13: following pertains to lhs menu */
+.exhibit-section-nav {
+/* fcd1, 9/16/13: comment out 
+	float: left;
+	padding-left:0;
+	overflow:hidden;
+	margin:0 0 0 18px;
+*/
+}
+
+.exhibit-page-nav {
+	padding:1em 0 0 2em;
+}
+
+.exhibit-sections a {
+	text-transform: none;
+}
+
+.exhibit-page-nav li {
+	padding-top:0.25em;
+}
+
+.exhibit-section-nav .exhibit-child-nav {
+	padding-left: 1.5em;
+/*	padding-top: 1em; */
+}
+
+/* fcd1, 9/6/13: item.php stuff */
+.item-title {
+	font-size: 22px;
+	/ *color: #661e19; */
+	margin-bottom: 1.25em;
+	line-height: 1.125em;
+	border-bottom: 1px solid #661e19;
+	margin-bottom:10px;
+}
+
+.element-set h2 {
+	display:none;
+}
+
+#item-page-content td {
+	padding:20px;
+	background-color:#fff;
+}
+
+.item-file a {
+	float: right;
+	top: 0;	
+	margin-right: 50px;
+	margin-left: 5px;
+	padding: 5px;
+	text-align: center;
+/*	background: #eee; */
+	background: #fff;
+	width: 250px;
+}
+
+.item-file {
+	background-color:#fff;
+	margin-bottom:0px;
+}
+
+.item-file img {
+	background: #fff;
+}
+
+.prevNext, .prevNext A, .prevNext A:visited {
+        font-size:11px;
+        color:#333;
+	text-align:right;
+	width:100%;
+        padding:5px;
+}
+
+#exhibit-sections .exhibit-child-nav li {
+    margin-top:4px;
+}
+
+#exhibit-sections li.exhibit-section-title {
+    margin-top:4px;
+}
+
+/* fcd1, 9/26/13: needed to bring images above CUL widget top navbar */
+div.highslide-container {
+    z-index: 1031 !important;
+}
+
+a.exhibit-title,
+.navigation a,
+.summary .exhibit-section-nav a {
+    text-transform: uppercase;
+    font-size: 120%;
+
+}
+
+.exhibit-text p,
+#info p {
+    font-size: 1.2em;
+}
+
+.copyright-footer, .footer11px {
+    font-size: 11px;
+    width:98%;
+    text-align:center;
+    color:#999;
+}
+
+p.footer11px {
+    padding-top: 6px;
+}
+
+p.copyright-footer a {
+    color: inherit;
+}
